@@ -59,7 +59,6 @@ app.get("/about", function(req, res){
     res.render("about");
 });
 
-
 app.post("/", function(req, res){
 
     const itemName = req.body.newItem;
@@ -80,7 +79,6 @@ app.post("/", function(req, res){
         });
     }
 });
-
 
 app.get("/:customList", function(req, res){
 
@@ -105,7 +103,6 @@ app.get("/:customList", function(req, res){
     });
 });
 
-
 app.post("/delete", function(req, res){
     const checkedBoxId = req.body.checkbox;
     const listName = req.body.listName;
@@ -124,7 +121,6 @@ app.post("/delete", function(req, res){
         });
     }
 });
-
 
 app.listen(3000, function(){
     console.log("running on port 3000");
